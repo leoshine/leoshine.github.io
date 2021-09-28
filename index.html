@@ -90,10 +90,7 @@
             <p style="padding-left:20px;vertical-align:middle">
                [Sep. 22, 2021] &nbsp;&nbsp;&nbsp;&nbsp;
                    <a href="image/defense.jpg">I have recently defended my doctorate of philosophy.</a> <strong> 🎉 </strong>
-
-
             </p>
-
             <p style="padding-left:20px;vertical-align:middle">
             </p>
           </td></tr>
@@ -108,41 +105,6 @@
           </td>
           <td><a href="https://scholar.google.com/citations?user=QCp2hbgAAAAJ&hl=en" target="_blank">(Full list)</a></td>
           </tr>
-
-
-
-
-
-
-
-          <!-- ######################################################################################### -->
-          <tr>
-            <td style="padding:20px;width:35%;vertical-align:middle">
-              <img src="https://github.com/leoshine/Spherical_Regression/raw/master/readme/use_case.png" alt="b3do" width="160" style="border-style: none">
-            </td>
-            <td width="65%" valign="middle">
-              <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Liao_Spherical_Regression_Learning_Viewpoints_Surface_Normals_and_3D_Rotations_on_CVPR_2019_paper.pdf">
-                <papertitle>Spherical Regression: Learning Viewpoints, Surface Normals and 3D Rotations on n-Spheres</papertitle>
-              </a>
-              <br>
-              <strong>Shuai Liao</strong>,
-              <a href="https://www.egavves.com">Efstratios Gavves</a>,
-              <a href="https://www.ceessnoek.info/">Cees G. M. Snoek</a>
-              <br>
-              <em>CVPR</em>, 2019
-              <br>
-              <a href="https://github.com/leoshine/Spherical_Regression" target="_blank">project page</a> /
-              <a href="data/sperical_regression.bib">bibtex</a> /
-              <a href="http://arxiv.org/abs/1904.05404" target="_blank">arXiv</a> /
-              <a href="http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Liao_Spherical_Regression_Learning_CVPR_2019_supplemental.pdf" target="_blank">supplemental materials</a>
-              <br>
-              <p></p>
-              <p style="color:grey">We proposal spherical regression, a plugin module that stabilizes gradient in deep neural network
-                 and boosts the performance for three computer vision tasks.
-                 We also present a 3D rotation estimation dataset called ModelNet10-SO3.</p>
-            </td>
-          </tr>
-
 
 
           <!-- ######################################################################################### -->
@@ -174,15 +136,66 @@
 
 
           <!-- ######################################################################################### -->
-          <tr onmouseout="hover2play_stop()" onmouseover="hover2play_start()">
+          <tr style="padding:20px;width:35%;vertical-align:middle"  onmouseout="hover2play_spherical_stop()" onmouseover="hover2play_spherical_start()">
+            <td style="padding:20px;width:35%;vertical-align:middle;">
+              <div class="one">
+                <div class="two" id='spherical_regression_video'><video height=100% muted autoplay loop>
+                <source src="image/spherical_regression.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <div class="two" id='spherical_regression_image'>
+                  <img src='image/spherical_regression.jpg' width="250">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function hover2play_spherical_start() {
+                  document.getElementById('spherical_regression'+'_video').style.opacity = "1";
+                  document.getElementById('spherical_regression'+'_image').style.opacity = "0";
+                }
+
+                function hover2play_spherical_stop() {
+                  document.getElementById('spherical_regression'+'_video').style.opacity = "0";
+                  document.getElementById('spherical_regression'+'_image').style.opacity = "1";
+                }
+                hover2play_spherical_stop()
+              </script>
+            </td>
+            <td width="65%" valign="middle">
+              <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Liao_Spherical_Regression_Learning_Viewpoints_Surface_Normals_and_3D_Rotations_on_CVPR_2019_paper.pdf" target="_blank">
+                <papertitle>Spherical Regression: Learning Viewpoints, Surface Normals and 3D Rotations on n-Spheres</papertitle>
+              </a>
+              <br>
+              <strong>Shuai Liao</strong>,
+              <a href="https://www.egavves.com">Efstratios Gavves</a>,
+              <a href="https://www.ceessnoek.info/">Cees G. M. Snoek</a>
+              <br>
+              <em>CVPR</em>, 2019
+              <br>
+              <a href="https://github.com/leoshine/Spherical_Regression" target="_blank">project page</a> /
+              <a href="data/sperical_regression.bib">bibtex</a> /
+              <a href="http://arxiv.org/abs/1904.05404" target="_blank">arXiv</a> /
+              <a href="http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Liao_Spherical_Regression_Learning_CVPR_2019_supplemental.pdf" target="_blank">supplemental materials</a>
+              <br>
+              <p></p>
+              <p style="color:grey">We proposal spherical regression, a plugin module that stabilizes gradient in deep neural network
+                 and boosts the performance for three computer vision tasks.
+                 We also present a 3D rotation estimation dataset called ModelNet10-SO3.</p>
+            </td>
+          </tr>
+          <br><br>
+
+
+
+          <!-- ######################################################################################### -->
+          <tr style="padding:20px;width:35%;vertical-align:middle"  onmouseout="hover2play_stop()" onmouseover="hover2play_start()">
             <td style="padding:20px;width:35%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='search_and_match_3d_shapes_video'><video  style="border: 10px solid #fff;" height=100% muted autoplay loop>
+                <div class="two" id='search_and_match_3d_shapes_video'><video height=100% muted autoplay loop>
                 <source src="image/search_and_match_3d_shapes.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <div class="two" id='search_and_match_3d_shapes_image'>
-                  <img src='image/search_and_match_3d_shapes.jpg' width="220">
+                  <img src='image/search_and_match_3d_shapes.jpg' width="200">
                 </div>
               </div>
               <script type="text/javascript">
@@ -217,6 +230,10 @@
                  This is particular useful for collecting training data for autonomous driving.</p>
             </td>
           </tr>
+          <br><br>
+
+
+
 
 
           <!-- ######################################################################################### -->
