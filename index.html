@@ -112,8 +112,8 @@
 
           <!-- ######################################################################################### -->
           <tr>
-            <td style="padding:20px;width:45%;vertical-align:middle">
-              <img src="image/quasibinary_classifier.png" alt="b3do" width="300" style="border-style: none">
+            <td style="padding:0px;width:45%;vertical-align:middle">
+              <img src="image/quasibinary_classifier.png" alt="b3do" width="350" style="border-style: none">
               <br>
               <br>
             </td>
@@ -133,7 +133,10 @@
               <a href="data/quasibinary.bib">bibtex</a>
               <br>
               <p></p>
-              <p style="color:grey">Quasibinary classifier unifies classical solutions for one-vs.-rest classification (softmax classifier) and multi-lable classification (sigmoid classifier). Quasibinary classifier yields well-calibrated probabilities that are ready to be used in critical settings, such as autonomous driving and clinical diagnosis.</p>
+              <p style="color:grey">
+              <!-- Quasibinary classifier unifies classical solutions for one-vs.-rest classification (softmax classifier) and multi-label classification (sigmoid classifier). Quasibinary classifier yields well-calibrated probabilities that are ready to be used in critical settings, such as autonomous driving and clinical diagnosis. -->
+              It is well-known that one-vs.-rest classification and multi-label classification need to be handled by the right classifier, i.e. <i>softmax classifier</i> vs. <i>sigmoid classifiers</i>. Could it be simpler? Yes. Quasibinary classifier might be the only classifier you need. And even better, Quasibinary classifier yields well-calibrated probabilities that are critical to tasks such as autonomous driving and clinical diagnosis.
+              </p>
               <!-- The core idea is to learn a shared normalization factor. -->
             </td>
           </tr>
@@ -186,9 +189,12 @@
               <a href="http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Liao_Spherical_Regression_Learning_CVPR_2019_supplemental.pdf" target="_blank">supplemental materials</a>
               <br>
               <p></p>
-              <p style="color:grey">We proposal spherical regression, a plugin module that stabilizes gradient in deep neural network
-                 and boosts the performance for three computer vision tasks.
-                 We also present a 3D rotation estimation dataset called ModelNet10-SO3.</p>
+              <p style="color:grey">
+               <!--  We proposal spherical regression, a plugin module that stabilizes gradient in deep neural network
+                and boosts the performance for three computer vision tasks at the same time.
+                 We also present a 3D rotation estimation dataset called ModelNet10-SO3. -->
+                Regression problems have always been tricky for deep neural networks to learn, mainly due to unstable gradient.
+                To resolve this, we proposal spherical regression, a plugin module that boosts the performance for three regression tasks in computer vision at the same time. We also present a 3D rotation estimation dataset called ModelNet10-SO3.</p>
             </td>
           </tr>
 
